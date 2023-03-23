@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
+    <sc_cat_item_catalog action="DELETE">
+        <sc_cat_item display_value="Apply for Telework">58eb0c4d477121103a6953ebd36d4379</sc_cat_item>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sys_class_name>sc_cat_item_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 15:25:38</sys_created_on>
+        <sys_id>d7ec4c8d477121103a6953ebd36d4329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Apply for Telework</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>sc_cat_item_catalog_d7ec4c8d477121103a6953ebd36d4329</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 15:25:38</sys_updated_on>
+    </sc_cat_item_catalog>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</application>
+        <file_path/>
+        <instance_id>f2068655db6ad3044f035d00cf961953</instance_id>
+        <instance_name>dev60846</instance_name>
+        <name>sc_cat_item_catalog_d7ec4c8d477121103a6953ebd36d4329</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog"><sc_cat_item_catalog action="INSERT_OR_UPDATE"><sc_cat_item display_value="Apply for Telework">58eb0c4d477121103a6953ebd36d4379</sc_cat_item><sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog><sys_class_name>sc_cat_item_catalog</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2023-03-23 15:25:38</sys_created_on><sys_id>d7ec4c8d477121103a6953ebd36d4329</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Service Catalog.Apply for Telework</sys_name><sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package><sys_policy/><sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope><sys_update_name>sc_cat_item_catalog_d7ec4c8d477121103a6953ebd36d4329</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2023-03-23 15:25:38</sys_updated_on></sc_cat_item_catalog></record_update>]]></payload>
+        <payload_hash>1230646472</payload_hash>
+        <record_name>Service Catalog.Apply for Telework</record_name>
+        <reverted_from/>
+        <source>d56ebfb8473121103a6953ebd36d4337</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 15:25:38</sys_created_on>
+        <sys_id>1bec4c8d477121103a6953ebd36d432c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1870f1359330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 15:25:38</sys_updated_on>
+        <type>Catalog Items Catalog</type>
+        <update_guid>9fec4c8d2671211088a61d563d7e0a2b</update_guid>
+        <update_guid_history>9fec4c8d2671211088a61d563d7e0a2b:1230646472</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Service Catalog.Apply for Telework">8d5e400147b121103a6953ebd36d436a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 15:31:46</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_catalog">sc_cat_item_catalog</sys_db_object>
+        <sys_id>13510c9727bf432cb1309b2a724dfa09</sys_id>
+        <sys_metadata>d7ec4c8d477121103a6953ebd36d4329</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.Apply for Telework</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_parent display_value="Apply for Telework">58eb0c4d477121103a6953ebd36d4379</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_scope_delete display_value="">5a8ce0739a504de8ab504f260a4bcfc4</sys_scope_delete>
+        <sys_update_name>sc_cat_item_catalog_d7ec4c8d477121103a6953ebd36d4329</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_catalog_d7ec4c8d477121103a6953ebd36d4329">1bec4c8d477121103a6953ebd36d432c</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 15:31:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
