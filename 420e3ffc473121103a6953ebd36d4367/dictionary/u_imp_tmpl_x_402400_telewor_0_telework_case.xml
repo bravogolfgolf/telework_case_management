@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="65b7248947f121103a6953ebd36d431b" extends="sys_import_set_row" label="Imp Tmpl X 402400 Telewor 0 Telework Case" max_length="40" name="u_imp_tmpl_x_402400_telewor_0_telework_case" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Arrangement" label="Arrangement" max_length="32" name="u_arrangement" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Assigned to" label="Assigned to" max_length="32" name="u_assigned_to" type="string"/>
+        <element attributes="import_attribute_name=Days per week" label="Days per week" max_length="40" name="u_days_per_week" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Opened by" label="Opened by" max_length="32" name="u_opened_by" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Priority" label="Priority" max_length="40" name="u_priority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Reason" label="Reason" max_length="40" name="u_reason" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="160" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=State" label="State" max_length="40" name="u_state" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Telework Case Management Config">fbd82cc98cf12110240df9331c3c34ec</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Home</name>
+        <optional_parameters>sysId,openInEditMode</optional_parameters>
+        <order>0</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>home</route_type>
+        <screen_type display_value="Home">f3d82cc98ef1211079c86f009409d0e6</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:27:46</sys_created_on>
+        <sys_id>73d82cc943f12110925c6937306ec4ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Home</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>sys_ux_app_route_73d82cc943f12110925c6937306ec4ec</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:27:46</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=73d82cc943f12110925c6937306ec4ec"/>
+</record_update>

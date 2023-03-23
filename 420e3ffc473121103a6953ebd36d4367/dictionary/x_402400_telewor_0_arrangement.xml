@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="f756c009477121103a6953ebd36d43ad" label="Arrangement" max_length="40" name="x_402400_telewor_0_arrangement" type="collection">
+    <element db_object_id="f756c009477121103a6953ebd36d43ad" label="Arrangement" max_length="40" name="x_402400_telewor_0_arrangement" text_index="true" type="collection">
         <element attributes="edge_encryption_enabled=true" display="true" label="Code" max_length="40" name="code" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="193" name="description" type="string"/>
     </element>

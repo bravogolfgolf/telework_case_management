@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_search_filter">
+    <sys_search_filter action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <ais_search_source display_value="Arrangement">0fe8200d47f121103a6953ebd36d4353</ais_search_source>
+        <label>Arrangement</label>
+        <name>Arrangement</name>
+        <order>200</order>
+        <search_context_config display_value="Telework Case Management AI Search Configuration">37d82cc9d6f12110d20c7ce481d438e7</search_context_config>
+        <sys_class_name>sys_search_filter</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:27:57</sys_created_on>
+        <sys_id>03e8200d47f121103a6953ebd36d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Arrangement</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>sys_search_filter_03e8200d47f121103a6953ebd36d4359</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:27:57</sys_updated_on>
+    </sys_search_filter>
+</record_update>

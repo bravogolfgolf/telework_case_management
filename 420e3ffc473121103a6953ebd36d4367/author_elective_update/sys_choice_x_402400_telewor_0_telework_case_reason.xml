@@ -72,5 +72,24 @@
             <sys_updated_on>2023-03-23 15:05:18</sys_updated_on>
             <value>reasonable_accommodation</value>
         </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>reason</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>COVID</label>
+            <language>en</language>
+            <name>x_402400_telewor_0_telework_case</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2023-03-23 17:20:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2023-03-23 17:20:43</sys_updated_on>
+            <value>covid</value>
+        </sys_choice>
     </sys_choice>
 </record_update>

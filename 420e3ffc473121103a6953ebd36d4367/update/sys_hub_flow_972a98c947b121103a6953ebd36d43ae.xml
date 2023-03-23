@@ -1,0 +1,1720 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>9a41b6c2ff12101088e94ee9453bf1a4</copied_from>
+        <copied_from_name>FlowTemplate_Empty</copied_from_name>
+        <description>Manage the Telework flow of work</description>
+        <internal_name>main</internal_name>
+        <label_cache>[{"name":"Created_1.current.arrangement.code","label":"Trigger - Record Created➛Telework Case Record➛Arrangement➛Code","reference":"","reference_display":"Code","type":"string","base_type":"string","parent_table_name":"x_402400_telewor_0_arrangement","column_name":"code"},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Telework Case Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_402400_telewor_0_telework_case","column_name":"opened_by"},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.__dont_treat_as_error__","label":"4 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.__action_status__","label":"4 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.email","label":"4 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.__dont_treat_as_error__","label":"3 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.__action_status__","label":"3 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.Table","label":"3 - Create Task➛Ticket Table","reference":"ticket","reference_display":"Ticket","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.Record","label":"3 - Create Task➛Ticket Record","reference":"ticket","reference_display":"Ticket","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current","label":"Trigger - Record Created➛Telework Case Record","reference":"x_402400_telewor_0_telework_case","reference_display":"Telework Case","type":"reference","base_type":"reference","attributes":{}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>7441a88147f121103a6953ebd36d43f2</master_snapshot>
+        <name>Main</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>cea5600947f121103a6953ebd36d43a8</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:23:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>972a98c947b121103a6953ebd36d43ae</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Main</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>sys_hub_flow_972a98c947b121103a6953ebd36d43ae</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:42</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_variable_value action="delete_multiple" query="document_key=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_402400_telewor_0_telework_case">^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:13:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cea5600947f121103a6953ebd36d43a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <table>x_402400_telewor_0_telework_case</table>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>972a98c947b121103a6953ebd36d43ae</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:13:41</sys_created_on>
+        <sys_id>8aa5600947f121103a6953ebd36d43a9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <trigger display_value="">cea5600947f121103a6953ebd36d43a8</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN8aa5600947f121103a6953ebd36d43a9"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN3a31688147f121103a6953ebd36d4342"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Main">972a98c947b121103a6953ebd36d43ae</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>3a31688147f121103a6953ebd36d4342</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:42</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3a31688147f121103a6953ebd36d4342"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3a31688147f121103a6953ebd36d4342</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>3231688147f121103a6953ebd36d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>3a31688147f121103a6953ebd36d4342</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4b31688147f121103a6953ebd36d4350</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=972a98c947b121103a6953ebd36d43ae^sys_idNOT INd72a98c947b121103a6953ebd36d43b0"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>972a98c947b121103a6953ebd36d43ae</id>
+        <name>Main</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:23:32</sys_created_on>
+        <sys_id>d72a98c947b121103a6953ebd36d43b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:23:32</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d72a98c947b121103a6953ebd36d43b0"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN3231688147f121103a6953ebd36d433d,7631688147f121103a6953ebd36d4310"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Main">972a98c947b121103a6953ebd36d43ae</model>
+        <model_id>972a98c947b121103a6953ebd36d43ae</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>3231688147f121103a6953ebd36d433d</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Main">972a98c947b121103a6953ebd36d43ae</model>
+        <model_id>972a98c947b121103a6953ebd36d43ae</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:21</sys_created_on>
+        <sys_id>7631688147f121103a6953ebd36d4310</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN4731688147f121103a6953ebd36d4356,4b31688147f121103a6953ebd36d436c,4f31688147f121103a6953ebd36d4364"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Main">972a98c947b121103a6953ebd36d43ae</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4731688147f121103a6953ebd36d4356</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:22:51</sys_updated_on>
+        <ui_id>90138717-66d8-4e2d-8ce2-cbc6546b000d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4731688147f121103a6953ebd36d4356"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4731688147f121103a6953ebd36d4356</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0f31688147f121103a6953ebd36d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4731688147f121103a6953ebd36d4356</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4b31688147f121103a6953ebd36d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4731688147f121103a6953ebd36d4356</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8731688147f121103a6953ebd36d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4731688147f121103a6953ebd36d4356</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>c331688147f121103a6953ebd36d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4731688147f121103a6953ebd36d4356"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8f31688147f121103a6953ebd36d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4f31688147f121103a6953ebd36d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>cb31688147f121103a6953ebd36d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4731688147f121103a6953ebd36d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0b31688147f121103a6953ebd36d4359</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4731688147f121103a6953ebd36d4356</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4331688147f121103a6953ebd36d435a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4731688147f121103a6953ebd36d4356"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4731688147f121103a6953ebd36d4356"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent/>
+        <comment>Notify Requester</comment>
+        <display_text/>
+        <flow display_value="Main">972a98c947b121103a6953ebd36d43ae</flow>
+        <order>4</order>
+        <parent_ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4b31688147f121103a6953ebd36d436c</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:22:52</sys_updated_on>
+        <ui_id>3d434974-ae36-48df-b71e-823e385d7ee6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b31688147f121103a6953ebd36d436c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b31688147f121103a6953ebd36d436c</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0b31688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b31688147f121103a6953ebd36d436c</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8f31688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>Your Telework application is approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b31688147f121103a6953ebd36d436c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>cb31688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4b31688147f121103a6953ebd36d436c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>4b31688147f121103a6953ebd36d436c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4f31688147f121103a6953ebd36d436e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Dear &lt;/span&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:78beee07-c832-44f6-ae69-9750c12aa6cb}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:78beee07-c832-44f6-ae69-9750c12aa6cb}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Telework Case Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_78beee07-c832-44f6-ae69-9750c12aa6cb" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;em style="box-sizing: border-box; caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none;"&gt;Your application for: &lt;/em&gt;&lt;em style="box-sizing: border-box; caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2a8ea49e-5cb9-4fa0-ac08-ccc73451885f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:2a8ea49e-5cb9-4fa0-ac08-ccc73451885f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Telework Case Record &amp;gt; Arrangement &amp;gt; Code"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Code&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_2a8ea49e-5cb9-4fa0-ac08-ccc73451885f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;/em&gt;&lt;span style="caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; display: inline !important; float: none;"&gt;is approved.&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>4b31688147f121103a6953ebd36d436c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8731688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>4b31688147f121103a6953ebd36d436c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8b31688147f121103a6953ebd36d436e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:59:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4b31688147f121103a6953ebd36d436c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0331688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4b31688147f121103a6953ebd36d436c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>c331688147f121103a6953ebd36d436f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4b31688147f121103a6953ebd36d436c"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4b31688147f121103a6953ebd36d436c"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent/>
+        <comment>Request Remote Access Token</comment>
+        <display_text/>
+        <flow display_value="Main">972a98c947b121103a6953ebd36d43ae</flow>
+        <order>3</order>
+        <parent_ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4f31688147f121103a6953ebd36d4364</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:22:52</sys_updated_on>
+        <ui_id>5516ff14-b80e-44b3-a7ec-5872d3a91acc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4f31688147f121103a6953ebd36d4364"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4f31688147f121103a6953ebd36d4364</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4b31688147f121103a6953ebd36d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>ticket</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4f31688147f121103a6953ebd36d4364"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>4f31688147f121103a6953ebd36d4364</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>c731688147f121103a6953ebd36d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>parent={{Created_1.current}}^short_description=Remote Access Token^assigned_to={"display":"System Administrator","value":"6816f79cc0a8016401c5a33be04be441","table":"sys_user","sys_id":"6816f79cc0a8016401c5a33be04be441"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>4f31688147f121103a6953ebd36d4364</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0731688147f121103a6953ebd36d4366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4f31688147f121103a6953ebd36d4364"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4f31688147f121103a6953ebd36d4364"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN0331688147f121103a6953ebd36d435c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8331688147f121103a6953ebd36d435b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Main">972a98c947b121103a6953ebd36d43ae</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0331688147f121103a6953ebd36d435c</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:42</sys_updated_on>
+        <ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0331688147f121103a6953ebd36d435c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>0331688147f121103a6953ebd36d435c</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0731688147f121103a6953ebd36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <value>Manager approves</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0331688147f121103a6953ebd36d435c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>0331688147f121103a6953ebd36d435c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8331688147f121103a6953ebd36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{90138717-66d8-4e2d-8ce2-cbc6546b000d.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>0331688147f121103a6953ebd36d435c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>cf31688147f121103a6953ebd36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0331688147f121103a6953ebd36d435c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0331688147f121103a6953ebd36d435c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN0731688147f121103a6953ebd36d4373,4331688147f121103a6953ebd36d4373,4b31688147f121103a6953ebd36d4372,8b31688147f121103a6953ebd36d4373,c731688147f121103a6953ebd36d4373"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>972a98c947b121103a6953ebd36d43ae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>0731688147f121103a6953ebd36d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>78beee07-c832-44f6-ae69-9750c12aa6cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>972a98c947b121103a6953ebd36d43ae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4331688147f121103a6953ebd36d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>df98c0ce-1054-4b95-af71-d51c4487c18c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>972a98c947b121103a6953ebd36d43ae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>4b31688147f121103a6953ebd36d4372</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8aa525a3-f099-4ed0-8a23-97c4c749bd78</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>972a98c947b121103a6953ebd36d43ae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.arrangement.code}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>8b31688147f121103a6953ebd36d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2a8ea49e-5cb9-4fa0-ac08-ccc73451885f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>972a98c947b121103a6953ebd36d43ae</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.arrangement.code}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>c731688147f121103a6953ebd36d4373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5c4bedb3-5eba-4d81-8bc1-2f552591f1bf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae^sys_idNOT IN3631688147f121103a6953ebd36d433f,3e31688147f121103a6953ebd36d433b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>3631688147f121103a6953ebd36d433f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:22</sys_created_on>
+        <sys_id>3e31688147f121103a6953ebd36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:22</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_972a98c947b121103a6953ebd36d43ae"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_972a98c947b121103a6953ebd36d43ae"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_972a98c947b121103a6953ebd36d43ae"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=972a98c947b121103a6953ebd36d43ae^sys_idNOT IN5d41e88147f121103a6953ebd36d439b"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"5d41e88147f121103a6953ebd36d439b","name":"plan","plan_signature":null}}</plan>
+        <plan_id>972a98c947b121103a6953ebd36d43ae</plan_id>
+        <snapshot>d4c7a48947f121103a6953ebd36d43ed</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d41e88147f121103a6953ebd36d439b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <trigger display_value="">cea5600947f121103a6953ebd36d43a8</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=972a98c947b121103a6953ebd36d43ae"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Manage the Telework flow of work</description>
+        <internal_name>main</internal_name>
+        <label_cache>[{"name":"Created_1.current.arrangement.code","label":"Trigger - Record Created➛Telework Case Record➛Arrangement➛Code","reference":"","reference_display":"Code","type":"string","base_type":"string","parent_table_name":"x_402400_telewor_0_arrangement","column_name":"code"},{"name":"Created_1.current.opened_by.name","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"name"},{"name":"Created_1.current.opened_by.first_name","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛First name","reference":"","reference_display":"First name","type":"string","base_type":"string","parent_table_name":"sys_user","column_name":"first_name"},{"name":"Created_1.current.opened_by.email","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Email","reference":"","reference_display":"Email","type":"email","base_type":"email","parent_table_name":"sys_user","column_name":"email"},{"name":"Created_1.current.opened_by","label":"Trigger - Record Created➛Telework Case Record➛Opened by","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_402400_telewor_0_telework_case","column_name":"opened_by"},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.__dont_treat_as_error__","label":"4 - Send Email➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.__action_status__","label":"4 - Send Email➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3d434974-ae36-48df-b71e-823e385d7ee6.email","label":"4 - Send Email➛email","reference":"sys_email","reference_display":"Email","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.__dont_treat_as_error__","label":"3 - Create Task➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.__action_status__","label":"3 - Create Task➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.Table","label":"3 - Create Task➛Ticket Table","reference":"ticket","reference_display":"Ticket","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"5516ff14-b80e-44b3-a7ec-5872d3a91acc.Record","label":"3 - Create Task➛Ticket Record","reference":"ticket","reference_display":"Ticket","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Created_1.current.opened_by.manager","label":"Trigger - Record Created➛Telework Case Record➛Opened by➛Manager","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sys_user","column_name":"manager"},{"name":"Created_1.current","label":"Trigger - Record Created➛Telework Case Record","reference":"x_402400_telewor_0_telework_case","reference_display":"Telework Case","type":"reference","base_type":"reference","attributes":{}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.__dont_treat_as_error__","label":"1 - Ask For Approval➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.__action_status__","label":"1 - Ask For Approval➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"90138717-66d8-4e2d-8ce2-cbc6546b000d.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Main</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Main">972a98c947b121103a6953ebd36d43ae</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7441a88147f121103a6953ebd36d43f2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=7441a88147f121103a6953ebd36d43f2^sys_idNOT IN0d41e88147f121103a6953ebd36d436b"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Main">7441a88147f121103a6953ebd36d43f2</flow>
+        <name>Created</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0d41e88147f121103a6953ebd36d436b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:41</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0d41e88147f121103a6953ebd36d436b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d41e88147f121103a6953ebd36d436b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0541e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">cfca92e0c31322002841b63b12d3ae00</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>0d41e88147f121103a6953ebd36d436b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4141e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>^EQ</value>
+        <variable display_value="Condition">66aadea0c31322002841b63b12d3aebf</variable>
+    </sys_variable_value>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=7441a88147f121103a6953ebd36d43f2^sys_idNOT IN3841a88147f121103a6953ebd36d43f3"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>7441a88147f121103a6953ebd36d43f2</id>
+        <name>Main</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_id>3841a88147f121103a6953ebd36d43f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:30</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3841a88147f121103a6953ebd36d43f3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=7441a88147f121103a6953ebd36d43f2^sys_idNOT IN8141e88147f121103a6953ebd36d433f,fc41a88147f121103a6953ebd36d43f4"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Main">7441a88147f121103a6953ebd36d43f2</model>
+        <model_id>7441a88147f121103a6953ebd36d43f2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_id>8141e88147f121103a6953ebd36d433f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Main">7441a88147f121103a6953ebd36d43f2</model>
+        <model_id>7441a88147f121103a6953ebd36d43f2</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_id>fc41a88147f121103a6953ebd36d43f4</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=7441a88147f121103a6953ebd36d43f2^sys_idNOT IN4541e88147f121103a6953ebd36d4355,4941e88147f121103a6953ebd36d4368,4d41e88147f121103a6953ebd36d435e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Main">7441a88147f121103a6953ebd36d43f2</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4541e88147f121103a6953ebd36d4355</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <ui_id>90138717-66d8-4e2d-8ce2-cbc6546b000d</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4541e88147f121103a6953ebd36d4355"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4541e88147f121103a6953ebd36d4355</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0141e88147f121103a6953ebd36d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4541e88147f121103a6953ebd36d4355</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4d41e88147f121103a6953ebd36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4541e88147f121103a6953ebd36d4355</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8541e88147f121103a6953ebd36d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4541e88147f121103a6953ebd36d4355</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c141e88147f121103a6953ebd36d4358</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4541e88147f121103a6953ebd36d4355"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0941e88147f121103a6953ebd36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Created_1.current.opened_by.manager}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0d41e88147f121103a6953ebd36d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4541e88147f121103a6953ebd36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>cd41e88147f121103a6953ebd36d4356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8141e88147f121103a6953ebd36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>4541e88147f121103a6953ebd36d4355</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c941e88147f121103a6953ebd36d4357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4541e88147f121103a6953ebd36d4355"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4541e88147f121103a6953ebd36d4355"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Send Email">c1806bf4a70323008299b39f087901cb</action_type>
+        <action_type_parent display_value="Send Email">98c181d20b100300d97d8bf637673ab5</action_type_parent>
+        <comment>Notify Requester</comment>
+        <display_text/>
+        <flow display_value="Main">7441a88147f121103a6953ebd36d43f2</flow>
+        <order>4</order>
+        <parent_ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4941e88147f121103a6953ebd36d4368</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <ui_id>3d434974-ae36-48df-b71e-823e385d7ee6</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4941e88147f121103a6953ebd36d4368"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4941e88147f121103a6953ebd36d4368</document_key>
+        <order>6</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0941e88147f121103a6953ebd36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>Your Telework application is approved</value>
+        <variable display_value="Subject">5d806bf4a70323008299b39f087901ec</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4941e88147f121103a6953ebd36d4368</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4541e88147f121103a6953ebd36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>x_402400_telewor_0_telework_case</value>
+        <variable display_value="Table">19806bf4a70323008299b39f087901d4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4941e88147f121103a6953ebd36d4368</document_key>
+        <order>7</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8141e88147f121103a6953ebd36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value/>
+        <variable display_value="Body">ad806bf4a70323008299b39f087901f2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4941e88147f121103a6953ebd36d4368"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_body</field>
+        <id>4941e88147f121103a6953ebd36d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c541e88147f121103a6953ebd36d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;Dear &lt;/span&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:78beee07-c832-44f6-ae69-9750c12aa6cb}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:78beee07-c832-44f6-ae69-9750c12aa6cb}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Telework Case Record &amp;gt; Opened by &amp;gt; Name"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Name&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_78beee07-c832-44f6-ae69-9750c12aa6cb" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span style="font-size: 12pt;"&gt;&lt;em style="box-sizing: border-box; caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none;"&gt;Your application for: &lt;/em&gt;&lt;em style="box-sizing: border-box; caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-size: 16px; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: auto; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none;"&gt;&lt;span class="data_parent_pill" style="display: inline;" contenteditable="false" data-pillvalue="{{fd_transform:2a8ea49e-5cb9-4fa0-ac08-ccc73451885f}}"&gt;&lt;span class="data_pill  accepts_transform_functions" tabindex="0" contenteditable="false" data-pillvalue="{{fd_transform:2a8ea49e-5cb9-4fa0-ac08-ccc73451885f}}"&gt;&lt;span class="data-pill-content-container"&gt;&lt;span class="pills"&gt;&lt;span class="pill-text" data-for="ah_tooltipTop" data-tip="Trigger - Record Created &amp;gt; Telework Case Record &amp;gt; Arrangement &amp;gt; Code"&gt;&lt;span class="pill-start"&gt;Trigger - Record Created&lt;/span&gt;&lt;span class="pill-arrow"&gt;&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;...&lt;span class="data-pill-label-caret"&gt;&lt;span class="data-pill-label-arrow"&gt;➛&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class="pill-end"&gt;Code&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;button id="transform_function_facade_2a8ea49e-5cb9-4fa0-ac08-ccc73451885f" class="transform_function_facade no_transform_applied"&gt;&lt;span class="inline-script-icon"&gt;&lt;span style="display: none;"&gt;​&lt;/span&gt;&lt;/span&gt;&lt;/button&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;/em&gt;&lt;span style="caret-color: #1c1e21; color: #1c1e21; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; font-style: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration: none; display: inline !important; float: none;"&gt;is approved.&lt;/span&gt; &lt;/span&gt;&lt;/p&gt;</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_subject</field>
+        <id>4941e88147f121103a6953ebd36d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0141e88147f121103a6953ebd36d436b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_to</field>
+        <id>4941e88147f121103a6953ebd36d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>0541e88147f121103a6953ebd36d436a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current.opened_by.email}} </value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4941e88147f121103a6953ebd36d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8941e88147f121103a6953ebd36d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value>{{Created_1.current}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4941e88147f121103a6953ebd36d4368</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4d41e88147f121103a6953ebd36d436a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_c1806bf4a70323008299b39f087901cb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4941e88147f121103a6953ebd36d4368"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4941e88147f121103a6953ebd36d4368"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Task">2b3a6335531003003bf1d9109ec58759</action_type>
+        <action_type_parent display_value="Create Task">3f9b1ff1531003003bf1d9109ec58775</action_type_parent>
+        <comment>Request Remote Access Token</comment>
+        <display_text/>
+        <flow display_value="Main">7441a88147f121103a6953ebd36d43f2</flow>
+        <order>3</order>
+        <parent_ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4d41e88147f121103a6953ebd36d435e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <ui_id>5516ff14-b80e-44b3-a7ec-5872d3a91acc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d41e88147f121103a6953ebd36d435e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4d41e88147f121103a6953ebd36d435e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c141e88147f121103a6953ebd36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>ticket</value>
+        <variable display_value="Table">e73a6335531003003bf1d9109ec5875c</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d41e88147f121103a6953ebd36d435e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>field_values</field>
+        <id>4d41e88147f121103a6953ebd36d435e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4141e88147f121103a6953ebd36d4360</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value>parent={{Created_1.current}}^short_description=Remote Access Token^assigned_to={"display":"System Administrator","value":"6816f79cc0a8016401c5a33be04be441","table":"sys_user","sys_id":"6816f79cc0a8016401c5a33be04be441"}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>task_table</field>
+        <id>4d41e88147f121103a6953ebd36d435e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8d41e88147f121103a6953ebd36d435f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2b3a6335531003003bf1d9109ec58759</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d41e88147f121103a6953ebd36d435e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d41e88147f121103a6953ebd36d435e"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=7441a88147f121103a6953ebd36d43f2^sys_idNOT INc141e88147f121103a6953ebd36d434a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">8331688147f121103a6953ebd36d435b</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Main">7441a88147f121103a6953ebd36d43f2</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c141e88147f121103a6953ebd36d434a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:13:40</sys_updated_on>
+        <ui_id>222499cd-74ac-489e-bef0-78553e8ddcd1</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c141e88147f121103a6953ebd36d434a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>c141e88147f121103a6953ebd36d434a</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>cd41e88147f121103a6953ebd36d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <value>Manager approves</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c141e88147f121103a6953ebd36d434a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>c141e88147f121103a6953ebd36d434a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4d41e88147f121103a6953ebd36d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{90138717-66d8-4e2d-8ce2-cbc6546b000d.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>c141e88147f121103a6953ebd36d434a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>8941e88147f121103a6953ebd36d434d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c141e88147f121103a6953ebd36d434a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c141e88147f121103a6953ebd36d434a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=7441a88147f121103a6953ebd36d43f2^sys_idNOT IN4941e88147f121103a6953ebd36d436d,4d41e88147f121103a6953ebd36d436d,c541e88147f121103a6953ebd36d436d,c941e88147f121103a6953ebd36d436d,cd41e88147f121103a6953ebd36d436d"/>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7441a88147f121103a6953ebd36d43f2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.first_name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4941e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>8aa525a3-f099-4ed0-8a23-97c4c749bd78</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7441a88147f121103a6953ebd36d43f2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>4d41e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>df98c0ce-1054-4b95-af71-d51c4487c18c</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7441a88147f121103a6953ebd36d43f2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.arrangement.code}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c541e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>2a8ea49e-5cb9-4fa0-ac08-ccc73451885f</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7441a88147f121103a6953ebd36d43f2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.opened_by.name}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>c941e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>78beee07-c832-44f6-ae69-9750c12aa6cb</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_pill_compound action="INSERT_OR_UPDATE">
+        <attached_to>7441a88147f121103a6953ebd36d43f2</attached_to>
+        <extra_info/>
+        <order>0</order>
+        <prescription>{{Created_1.current.arrangement.code}}</prescription>
+        <source_ui_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:31</sys_created_on>
+        <sys_id>cd41e88147f121103a6953ebd36d436d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:31</sys_updated_on>
+        <transform_compositions>[]</transform_compositions>
+        <transform_definition_id/>
+        <ui_id>5c4bedb3-5eba-4d81-8bc1-2f552591f1bf</ui_id>
+    </sys_hub_pill_compound>
+    <sys_hub_flow_variable action="delete_multiple" query="model=7441a88147f121103a6953ebd36d43f2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2^sys_idNOT IN8941e88147f121103a6953ebd36d433b,c541e88147f121103a6953ebd36d4343"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_id>8941e88147f121103a6953ebd36d433b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 16:54:30</sys_created_on>
+        <sys_id>c541e88147f121103a6953ebd36d4343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 16:54:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_7441a88147f121103a6953ebd36d43f2"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_7441a88147f121103a6953ebd36d43f2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_7441a88147f121103a6953ebd36d43f2"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>972a98c947b121103a6953ebd36d43ae</sys_id>
+        <latest_snapshot>7441a88147f121103a6953ebd36d43f2</latest_snapshot>
+        <compiler_build>glide-tokyo-07-08-2022__patch4a-01-03-2023_01-11-2023_0813.zip</compiler_build>
+    </sys_hub_flow>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="Telework Case Management">bfd82cc9e3f121106db6b5ee575797e5</dashboard>
+        <experience display_value="Telework Case Management">bbd82cc9d3f12110fe07574517a40fe6</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:27:46</sys_created_on>
+        <sys_id>77d82cc9bcf12110bf36678d3d918fea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>par_dashboard_visibility_77d82cc9bcf12110bf36678d3d918fea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:27:46</sys_updated_on>
+    </par_dashboard_visibility>
+</record_update>

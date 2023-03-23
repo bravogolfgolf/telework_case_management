@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_search_source_m2m">
+    <ais_search_profile_ais_search_source_m2m action="INSERT_OR_UPDATE">
+        <profile display_value="Telework Case Management search profile">ffd82cc988f1211016f6717251a27eeb</profile>
+        <search_source display_value="Telework Case">72e8200d47f121103a6953ebd36d4320</search_source>
+        <sys_class_name>ais_search_profile_ais_search_source_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 17:27:57</sys_created_on>
+        <sys_id>fee8200d47f121103a6953ebd36d4322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Telework Case Management search profile.Telework Case</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_update_name>ais_search_profile_ais_search_source_m2m_fee8200d47f121103a6953ebd36d4322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 17:27:57</sys_updated_on>
+    </ais_search_profile_ais_search_source_m2m>
+</record_update>
