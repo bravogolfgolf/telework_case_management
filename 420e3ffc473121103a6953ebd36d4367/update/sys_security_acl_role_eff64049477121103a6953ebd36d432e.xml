@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-03-23 14:59:43</sys_created_on>
+        <sys_id>eff64049477121103a6953ebd36d432e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_402400_telewor_0_telework_case.x_402400_telewor_0.admin</sys_name>
+        <sys_package display_value="Telework Case Management" source="x_402400_telewor_0">420e3ffc473121103a6953ebd36d4367</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Telework Case Management">420e3ffc473121103a6953ebd36d4367</sys_scope>
+        <sys_security_acl display_value="x_402400_telewor_0_telework_case">abf64049477121103a6953ebd36d432c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_eff64049477121103a6953ebd36d432e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-03-23 14:59:43</sys_updated_on>
+        <sys_user_role display_value="x_402400_telewor_0.admin" name="x_402400_telewor_0.admin">0e0e3ffc473121103a6953ebd36d436c</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>
